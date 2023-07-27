@@ -1,1 +1,8 @@
 -- Active: 1690467656061@@127.0.0.1@3306
+CREATE TABLE user (
+    id TEXT PRIMARY KEY NOT NULL,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    password TEXT NOT NULL,
+    created_at TEXT DEFAULT (DATETIME()) NOT NULL
+);
